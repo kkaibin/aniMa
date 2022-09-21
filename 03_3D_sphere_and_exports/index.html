@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../p5js_lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="../p5js_lib/addons/p5.sound.js"></script>
+    <script src="../ccapture.js-master/src/CCapture.js"></script>
+    <script src="../ccapture.js-master/src/webm-writer-0.2.0.js"></script>
+    <script src="../ccapture.js-master/src/gif.js"></script>
+    <script src="../ccapture.js-master/src/gif.worker.js"></script>
+    <script src="../ccapture.js-master/src/download.js"></script>
+    <script>
+        var capturer = new CCapture({
+            format: 'gif', //can further transform to mp4 by other tools
+            workersPath:'output/',
+            framerate: 60,
+            verbose: true //allows you to see the process in the console
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
